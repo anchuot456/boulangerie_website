@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.name{
+    background-color: #1c4b39;
+    color: black;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.slider-1{
+    max-width: 353.61px;
+    margin: 10px auto;
+    overflow: hidden;
+    border: 1px solid;
+}
+.slider-1 .slider{
+    display: flex;
+    animation: slider-1 30s infinite ease-in-out;
+}
+img{
+    border-radius: 4px;
+    width: 100%;
+}
+@keyframes slider-1{
+    0%,
+    12%{
+        transform: translateX(0);
+    }
+    16%,
+    28%{
+        transform: translateX(-100%);
+    }
+    32%,
+    44%{
+        transform: translateX(-200%);
+    }
+    48%,
+    60%{
+        transform: translateX(-300%);
+    }
+    64%,
+    76%{
+        transform: translateX(-400%);
+    }
+    80%,
+    92%{
+        transform: translateX(-500%);
+    }
+    96%,
+    100%{
+        transform: translateX(-600%);
+    }
+}
+.footer{
+    padding-top: 10px;
+    padding-left: 40px;
+}
+.icon{
+    width: 15px;
+    height: 15px;
+}
+span{
+    padding-left: 5px;
+    text-align: center;
+    font-size: 18;
+}
