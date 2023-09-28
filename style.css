@@ -4,26 +4,77 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+body{
+    background-image: url("./images/background.png");
+    background-repeat:repeat-y;
+    background-size: 100% 100%;
+}
 .name{
-    background-color: #1c4b39;
-    color: black;
     text-align: center;
     font-size: 45px;
     font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    top: 10%;
 }
 .slider-1{
-    max-width: 353.61px;
     margin: 10px auto;
     overflow: hidden;
     border: 1px solid;
+    width: 250px;
+    height: 357px;
+    position: relative;
+    top: 10%;
 }
 .slider-1 .slider{
     display: flex;
     animation: slider-1 30s infinite ease-in-out;
 }
-img{
+.slider-1 .slider img{
     border-radius: 4px;
+    width: 250px;
+    height: 357px;
+}
+.footer{
     width: 100%;
+    position: relative;
+    bottom: 0%;
+}
+.container{
+    text-align: center;
+    z-index: 1;
+}
+.icon{
+    width: 15px;
+    height: 15px;
+}
+span{
+    padding-left: 5px;
+    text-align: center;
+    font-size: 18;
+}
+.content{
+    position: relative;
+    max-height: 100%;
+}
+@media only screen and (min-width:387px){
+    .slider-1{width: 300px; height: 429px;}
+    .slider-1 .slider img{width: 300px; height: 429px;}
+}
+@media only screen and (min-width:503px){
+    .slider-1{width: 400px; height: 571px;}
+    .slider-1 .slider img{width: 400px; height: 571px;}
+}
+@media only screen and (min-width:714px){
+    .slider-1{width: 500px; height: 714px;}
+    .slider-1 .slider img{width: 500px; height: 714px;}
+    .name{font-size: 90px;}
+    .container .container-1 h3{font-size: 30px;}
+    .container .container-1 .info{font-size: 24;}
+}
+@media only screen and (min-height: 730px){
+    @media only screen and (max-width:730) {
+        .footer{position: fixed;}   
+    }
 }
 @keyframes slider-1{
     0%,
@@ -54,17 +105,4 @@ img{
     100%{
         transform: translateX(-600%);
     }
-}
-.footer{
-    padding-top: 10px;
-    padding-left: 40px;
-}
-.icon{
-    width: 15px;
-    height: 15px;
-}
-span{
-    padding-left: 5px;
-    text-align: center;
-    font-size: 18;
 }
